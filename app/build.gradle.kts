@@ -5,20 +5,22 @@ plugins {
 }
 
 android {
-    namespace = "com.carvision.ai"
+    namespace = "com.example.cardetection"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.carvision.ai"
-        buildConfigField("String", "CARVISION_AI_URL", "\"${project.findProperty("CARVISION_AI_URL") ?: ""}\"")
-        buildConfigField("String", "CARVISION_AI_KEY", "\"${project.findProperty("CARVISION_AI_KEY") ?: ""}\"")
-        minSdk = 26
+        applicationId = "com.example.cardetection"
+        minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+
+        buildConfigField("String", "API_KEY", "\"YOUR_API_KEY\"")
     }
 
-    buildFeatures { compose = true }
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
