@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId = "com.carvision.ai"
         buildConfigField("String", "CARVISION_AI_URL", "\"${project.findProperty("CARVISION_AI_URL") ?: ""}\"")
-        buildConfigField("String", "CARVISION_AI_KEY", "\"${project.findProperty("CARVISION_AI_KEY") ?: ""}\""
+        buildConfigField("String", "CARVISION_AI_KEY", "\"${project.findProperty("CARVISION_AI_KEY") ?: ""}\"")
         minSdk = 26
         targetSdk = 35
         versionCode = 1
